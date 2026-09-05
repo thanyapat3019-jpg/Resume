@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรซูเม่ - ธัญญพัทธ์ อินทวัฒน์วงศ์ษา</title>
+    <!-- เรียกใช้งาน Google Fonts (Sarabun) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Sidebar ซ้าย */
+        .sidebar {
+            background-color: #f8f9fa;
+            width: 35%;
+            padding: 30px 25px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .profile-img-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #6c757d;
+        }
+
+        .sidebar h3 {
+            font-size: 1.05rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        .sidebar h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .sidebar p, .sidebar li {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li::before {
+            content: "• ";
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        /* Main Content ขวา */
+        .main-content {
+            width: 65%;
+            padding: 35px 30px;
+        }
+
+        .header-name {
+            background-color: #5a6268;
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        .header-name h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .header-name h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #e2e8f0;
+            margin-top: 3px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .item-block {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        .item-sub {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #444;
+            padding-left: 15px;
+        }
+
+        .item-desc li {
+            margin-bottom: 3px;
+        }
+
+        .skills-box {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .quote-box {
+            font-style: italic;
+            color: #555;
+            background: #fdfdfd;
+            border-left: 4px solid #5a6268;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive สำหรับมือถือ */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Sidebar ด้านซ้าย: รูปภาพ ข้อมูลส่วนตัว และงานอดิเรก -->
+        <div class="sidebar">
+            <div class="profile-img-container">
+                <!-- เปลี่ยนลิงก์รูปภาพใน src เป็นรูปของคุณเอง -->
+                <img src="https://via.placeholder.com/130x160" alt="รูปโปรไฟล์" class="profile-img">
+            </div>
+
+            <h3>โปรไฟล์</h3>
+            <p><strong>ชื่อเล่น:</strong> นับดาว</p>
+            <p><strong>วัน/เดือน/ปีเกิด:</strong> 25 ธันวาคม 2543</p>
+            <p><strong>อายุ:</strong> 24 ปี</p>
+            <p><strong>สัญชาติ:</strong> ไทย</p>
+            <p><strong>ศาสนา:</strong> พุทธ</p>
+            <p><strong>น้ำหนัก:</strong> 65 กก. <strong>ส่วนสูง:</strong> 165 ซม.</p>
+
+            <h3>ที่อยู่ปัจจุบัน</h3>
+            <p><strong>หมายเลขโทรศัพท์:</strong><br>080-806-364-3</p>
+            <p><strong>อีเมล:</strong><br>rthicharithukkh@gmail.com</p>
+
+            <h3>งานอดิเรก</h3>
+            <ul>
+                <li>เล่นกีตาร์</li>
+                <li>ร้องเพลง</li>
+                <li>ออกกำลังกาย</li>
+                <li>อ่านหนังสือ</li>
+            </ul>
+        </div>
+
+        <!-- Main Content ด้านขวา: ชื่อ การศึกษา ประสบการณ์ และทักษะ -->
+        <div class="main-content">
+            <div class="header-name">
+                <h1>ชื่อ ธัญญพัทธ์ อินทวัฒน์วงศ์ษา</h1>
+                <h2>Thanyapat Inthawatwongsa</h2>
+            </div>
+
+            <div class="section">
+                <h3>การศึกษา</h3>
+                <div class="item-block">
+                    <div class="item-title">มัธยมตอนปลาย โรงเรียนสันติราษฎร์วิทยาลัย</div>
+                    <div class="item-sub">(สาขาการโรงแรมการท่องเที่ยว) เกรดเฉลี่ย 2.20</div>
+                </div>
+                <div class="item-block">
+                    <div class="item-title">กำลังศึกษา 2568 ระดับปริญญาตรี</div>
+                    <div class="item-sub">มหาวิทยาลัยหอการค้า (คณะนิเทศศาสตร์ สาขาสื่อสารมวลชน)</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>ประสบการณ์การทำงาน</h3>
+                <div class="item-block">
+                    <div class="item-title">(2021 – 2022) Novotel Siam Hotel</div>
+                    <div class="item-sub">ตำแหน่ง Casual ห้องลินิน</div>
+                </div>
+                <div class="item-block">
+                    <div class="item-title">(2022 – 2024) Admin</div>
+                    <div class="item-sub">และเป็นพนักงานบริษัท รายวัน workprint</div>
+                    <ul class="item-desc">
+                        <li>ติดต่อประสานงาน เดินเอกสารให้กับพนักงาน</li>
+                        <li>ดูแลเอกสารหรือส่งจดหมายให้กับพนักงานภายในแผนกต่างๆ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>ทักษะการใช้ภาษา</h3>
+                <div class="skills-box">
+                    ภาษาไทย : ดีมาก<br>
+                    ภาษาอังกฤษ : พอใช้ได้
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>ความสามารถ</h3>
+                <ul class="item-desc" style="padding-left: 0; list-style-type: none;">
+                    <li>- มีความอดทน มีวินัยในการทำงาน ทำงานร่วมกับผู้อื่นได้เป็นอย่างดี</li>
+                    <li>- มีทักษะการทำงานสื่อสารเป็นทีมได้</li>
+                    <li>- สามารถใช้คอมพิวเตอร์ได้ พิมพ์งานเร็ว และใช้ microsoft ต่างๆ ได้</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>คติประจำใจ</h3>
+                <div class="quote-box">
+                    เราจะเติบโตและก้าวหน้ากับสิ่งที่เราเริ่มต้น
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
